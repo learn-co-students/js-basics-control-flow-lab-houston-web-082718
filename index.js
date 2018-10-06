@@ -1,5 +1,4 @@
 function scuberGreetingForFeet(dist) {
-    
     let statement
 
     if (dist < 400) {
@@ -14,29 +13,19 @@ function scuberGreetingForFeet(dist) {
 }
 
 function ternaryCheckCity(city) {
-
-    let statement
-
-    if (city === "NYC") {
-        statement = "Ok, sounds good."
-    } else {
-        statement = "No go."
-    }
-
-    return statement
+   return city === "NYC" ? "Ok, sounds good." : "No go."
 }
 
 function switchOnCharmFromTip(tip_level) {
-
-    let statement
-
-    if (tip_level === "generous") {
-        statement = "Thank you so much."
-    } else if (tip_level === "not as generous") {
-        statement = "Thank you."
-    } else {
-        statement = "Bye."
+    switch(tip_level) {
+        case "generous":
+            return "Thank you so much."
+            break;
+        case "not as generous":
+            return "Thank you."
+            break;
+        default:
+            return "Bye."
+            break;
     }
-
-    return statement
 }
